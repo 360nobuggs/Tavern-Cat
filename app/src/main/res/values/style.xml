@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Style_Edit_textx" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlActivated">@color/agressive_orange</item>
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="android:textColorHint">#CCCCCC</item>
+        <item name="android:editTextColor">@color/white</item>
+
+
+    </style>
+</resources>

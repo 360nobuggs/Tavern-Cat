@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trendy_blue"
+    android:clipChildren="false"
+    app:layoutDescription="@xml/scene_main">
+
+    <FrameLayout
+        android:id="@+id/bottomCard"
+        android:layout_width="400dp"
+        android:layout_height="632dp"
+        android:background="@drawable/card_cos"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="50dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:scaleType="fitEnd"
+            android:layout_margin="20dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:id="@+id/linear_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:textSize="50sp"
+                android:fontFamily="@font/vinsdojo"
+                android:textColor="#EA5222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Tavern Cat" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica"
+                android:gravity="left"
+                android:layout_margin="20dp"
+
+                android:text="Swipe to start playing!"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/topCard"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:background="@drawable/card_cos"
+        >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="20dp"
+            android:scaleType="fitEnd"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:id="@+id/linear_top"
+            android:layout_width="match_parent"
+            android:clipChildren="true"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:fontFamily="@font/vinsdojo"
+                android:textColor="@color/black"
+                android:layout_margin="15dp"
+                android:paddingTop="30dp"
+                android:gravity="center"
+                android:text="Challange" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:windowSoftInputMode="adjustNothing"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/helvetica"
+                android:gravity="left"
+                android:text="front "
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>
